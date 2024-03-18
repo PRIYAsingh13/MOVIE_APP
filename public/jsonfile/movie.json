@@ -1,0 +1,119 @@
+{
+    "movies": [
+      {
+        "image": "AASHIQUI",
+        "name": "Aashiqui 2",
+        "type": "Action",
+        "rating": 8.5,
+        "season": 1
+    
+      },
+      {
+        "image": "BEGUMJAAN",
+        "name": "Begum jaan",
+        "type": "Comedy",
+        "rating": 7.9,
+        "season": null
+      },
+      {
+        "image": "BLADERRUNNER",
+        "name": "Blade rrunner",
+        "type": "Drama",
+        "rating": 9.2,
+        "season": 3
+      },
+      {
+        "image": "BODYGUARD",
+        "name": "Bodyguard",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "BRAVEHEART",
+        "name": "Braveheart",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "DANGLE",
+        "name": "Dangle",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "DARBAR",
+        "name": "Darbar",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "DARKTOWER",
+        "name": "Darktower",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "INCEPTION",
+        "name": "Inception",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "JAILER",
+        "name": "Jailer",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "PADMAAVAT",
+        "name": "Padmaavat",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "PIRATES",
+        "name": "Pirates of the Caribbean",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "PK",
+        "name": "PK",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "PUSHPA",
+        "name": "Pushpa",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "RAAJI",
+        "name": "Raaji",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      },
+      {
+        "image": "SHOLAY",
+        "name": "Sholay",
+        "type": "Thriller",
+        "rating": 8.0,
+        "season": null
+      }
+
+    ]
+  }
+  
