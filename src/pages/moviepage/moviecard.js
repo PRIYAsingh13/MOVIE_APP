@@ -1,12 +1,10 @@
-import React,{useState} from 'react'
-import { Image_Url } from '../../images/images'
+import React from 'react'
 import Card from '../../Component/Card/card'
-const Moviecard = ({handleAddToCart}) => {
+const Moviecard = ({handleAddToCart, handleAddCartClick}) => {
  
   return (
     <div className='bg-[#000000]'>
-      <Card handleAddToCart = {handleAddToCart}/>
-
+      <Card handleAddToCart = {handleAddToCart} handleAddCartClick={handleAddCartClick}/>
     </div>
   )
 }

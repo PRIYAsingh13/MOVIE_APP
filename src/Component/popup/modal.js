@@ -1,20 +1,35 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Image_Url } from '../../images/images'
 import { IoCartOutline } from "react-icons/io5";
 import { LuDot } from "react-icons/lu";
 import { IoMdStar } from "react-icons/io";
 import { IoIosClose } from "react-icons/io";
 
-const Modal = ({ isOpen, movie, onClose, handleAddToCart }) => {
+const Modal = ({ isOpen, movie, onClose, handleAddToCart, handleAddCartClick }) => {
+
+    const [addedToCart, setAddedToCart] = useState(false);
+
+    useEffect(() => {
+        setAddedToCart(false);
+    }, [movie]);
+
+    
+
+    const handleAddToCartClick = () => {
+        if (!addedToCart) {
+            setAddedToCart(true);
+            handleAddToCart();
+            handleAddCartClick(movie)
+        }
+    };
    
-    // console.log(movie)
     return (
-        <div className={`bg-[#111828] fixed top-10 left-[25%] w-[50%]  h-fit p-[20px]  ${isOpen ? '' : 'hidden'}`} >
+        <div className= {`bg-[#111828] fixed top-[15%] left-[25%] w-[50%]  h-fit p-[20px]  ${isOpen ? '' : 'hidden'}`} style={{ zIndex: 50 }} >
             {isOpen && movie && (
                 <div className='flex w-[100%] gap-[20px]'>
                     <div className='w-[33%] gap-[10px] flex flex-col'>
-                        <img className='w-[100%] h-[350px]' src={Image_Url[movie.image]} />
-                        <button onClick={handleAddToCart} className='bg-[yellow] flex items-center w-[100%]  justify-center py-[10px]'> <IoCartOutline /> Add to Cart</button>
+                        <img className='w-[100%] h-[350px]' src={Image_Url[movie.image]} alt={movie.name} />
+                        <button onClick={handleAddToCartClick}  className='bg-[yellow] flex items-center w-[100%]  justify-center py-[10px]' disabled={addedToCart}> <IoCartOutline /> Add to Cart</button>
                     </div>
                     <div className='w-[67%] text-[#6c7383]'>
                         <div>
